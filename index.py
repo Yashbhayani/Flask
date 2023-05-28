@@ -2,7 +2,6 @@ import os
 from distutils.log import debug
 from fileinput import filename
 from flask import Flask, make_response, redirect, render_template, request, session, url_for
-# from flask import *
 
 UPLOAD_FOLDER = 'image'
 
@@ -192,6 +191,7 @@ def profile2():
         return '<p>Please login first</p>'
 
 # --------------------------------------------------------------------------------------------
+#file uploding
 @app.route('/upload')  
 def upload():  
     return render_template("file_upload_form.html")  
